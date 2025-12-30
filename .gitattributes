@@ -1,0 +1,5 @@
+
+*.css linguist-detectable=false
+# Ignore HTML in language stats
+*.html linguist-detectable=false
+*.htm linguist-detectable=false
