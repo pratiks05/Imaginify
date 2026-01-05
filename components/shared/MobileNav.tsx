@@ -16,7 +16,7 @@ const MobileNav = () => {
       <Link href="/" className="flex items-center gap-2 md:py-2">
         <Image
           src="/assets/images/logo-text.svg"
-          alt="logo"
+          alt="Imaginify Logo"
           width={180}
           height={28}
         />
@@ -40,7 +40,7 @@ const MobileNav = () => {
               <SheetTitle>
                 <Image
                   src="/assets/images/logo-text.svg"
-                  alt="logo"
+                  alt="Imaginify Logo"
                   width={152}
                   height={23}
                 />
@@ -58,7 +58,7 @@ const MobileNav = () => {
                       <Link className="sidebar-link cursor-pointer" href={link.route}>
                         <Image
                           src={link.icon}
-                          alt="logo"
+                          alt={link.label}
                           width={24}
                           height={24}
                         />

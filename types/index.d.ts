@@ -57,7 +57,13 @@ declare type UpdateImageParams = {
 
 declare type Transformations = {
     restore?: boolean;
-    fillBackground?: boolean;
+    fillBackground?: boolean | {
+        crop?: "fill" | "auto" | "pad" | "crop" | "fill_pad" | "fit" | "imagga_crop" | "imagga_scale" | "lfill" | "limit" | "lpad" | "mfit" | "mpad" | "scale" | "thumb";
+        gravity?: "auto" | "center" | "face" | "faces" | "north" | "south" | "east" | "west";
+        prompt?: string;
+    };
+    crop?: "fill" | "auto" | "pad" | "crop" | "fill_pad" | "fit" | "imagga_crop" | "imagga_scale" | "lfill" | "limit" | "lpad" | "mfit" | "mpad" | "scale" | "thumb";
+    gravity?: "auto" | "center" | "face" | "faces" | "north" | "south" | "east" | "west";
     remove?: {
         prompt: string;
         removeShadow?: boolean;
@@ -114,8 +120,8 @@ declare type RemoveUrlQueryParams = {
 };
 
 declare type SearchParamProps = {
-    params: { id: string; type: TransformationTypeKey };
-    searchParams: { [key: string]: string | string[] | undefined };
+    params: Promise<{ id: string; type: TransformationTypeKey }>;
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
 declare type TransformationFormProps = {
