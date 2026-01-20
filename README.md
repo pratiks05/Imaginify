@@ -1,5 +1,3 @@
-
-````md
 # 🖼️ Imaginify — AI Image SaaS Platform
 
 Imaginify is a **full-fledged Software-as-a-Service (SaaS) application** that provides advanced **AI-powered image processing features** with a **secure authentication system**, **subscription-based payments**, and a **credit-based usage model**.
